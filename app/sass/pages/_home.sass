@@ -1,0 +1,67 @@
+section
+	position: relative
+
+.hero
+	height: 100vh
+
+.section
+	position: relative
+	height: 100vh
+	width: 100%
+	display: flex
+	align-items: center
+
+	h1
+		font-size: 48px
+
+	p
+		margin: 20px 0
+		max-width: 400px
+
+	video
+		position: absolute
+		top: 50%
+		right: 0
+		transform: translateY(-50%)
+		border: 10px solid $w
+		width: 50%
+
+	&__facts
+		display: grid
+		grid-template-columns: repeat(2,1fr)
+		grid-column-gap: 20px
+		grid-row-gap: 20px
+		-webkit-box-align: stretch
+		-ms-flex-align: stretch
+		align-items: stretch
+		max-width: 400px
+		margin-bottom: 50px
+
+		span
+			display: block
+
+	&__cta
+		color: $w
+		display: flex
+		align-items: center
+
+	&__cta--text
+		margin-right: 20px
+
+	&__cta--icon
+		width: 30px
+		height: 30px
+		display: block
+		vertical-align: middle
+
+.section1
+	background: linear-gradient(90deg, #757638 0%, #C6C75E 100%)
+	z-index: 1
+
+.section2
+	background: linear-gradient(90deg, #5A8194 0%, #81BCD7 100%)
+	z-index: 2
+
+.section3
+	background: linear-gradient(90deg, #75413B 0%, #9E554D 100%)
+	z-index: 3
