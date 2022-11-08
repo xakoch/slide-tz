@@ -37,14 +37,20 @@ header, footer
 	height: 100vh
 	position: relative
 	text-transform: uppercase
+	+r(1200)
+		height: 80vh
+		font-size: 40px
+	+r(992)
+		height: auto
+	+r(768)
+		font-size: 36px
+		padding: 50px 0
 
 header
-	background: linear-gradient(180deg, #0029FF 0%, #090909 100%)
 	position: absolute
 	top: 0
 	left: 0
-	z-index: 3
-	opacity: .2
+	z-index: 10
 
 footer
 	background: linear-gradient(0deg, #0029FF 0%, #090909 100%)
